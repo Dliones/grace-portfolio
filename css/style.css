@@ -267,9 +267,9 @@ section {
 }
 
 /* ===== Cards and grids ===== */
-.grid-3 {
-  display:table-row-group;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  .grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2.5rem;
 }
 .card {
@@ -296,6 +296,7 @@ section {
 }
 .card img {
   width: 100%;
+  height: auto;
   aspect-ratio: 16/10;
   object-fit: cover;
 }
@@ -456,7 +457,7 @@ textarea:focus {
 .task.urgent {
   border-left-color: var(--pink);
 }
-.task .medium {
+.task.medium {
   border-left-color: var(--teal);
 }
 .task input[type="checkbox"] {
