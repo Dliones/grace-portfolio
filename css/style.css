@@ -592,4 +592,7 @@ textarea:focus {
     animation: none !important;
     transition: none !important;
   }
+   @media (max-width: 560px) {
+     th, td { padding: .6rem .5rem; font-size: .9rem; }
+   }
 }
